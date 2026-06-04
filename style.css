@@ -20,8 +20,9 @@ body {
   align-items: center;
   justify-content: center;
   font-family: 'DM Sans', sans-serif;
-  overflow: hidden;
+  overflow-y: auto;
   position: relative;
+  padding: 2rem 0;
 }
 
 .bg-blobs { position: fixed; inset: 0; pointer-events: none; z-index: 0; }
@@ -229,8 +230,8 @@ input[type=range]::-webkit-slider-thumb {
 .playlist {
   width: 100%;
   display: flex; flex-direction: column; gap: 6px;
-  max-height: 220px;
-  overflow-y: auto;
+  max-height: none;
+  overflow-y: visible;
 }
 .playlist::-webkit-scrollbar { width: 4px; }
 .playlist::-webkit-scrollbar-track { background: var(--border); border-radius: 4px; }
